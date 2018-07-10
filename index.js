@@ -1,14 +1,16 @@
 var katzDeli = [];
 let newLine = [];
+let lineCount = 0;
 
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name);
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
 }
 
-function takeANumberTwo(){
-  
-
+function takeANumberTwo(newLine){
+  lineCount += 1;
+  newLine.push(lineCount);
+  return `You are ${lineCount}`;
 }
 
 function nowServing(line){
@@ -35,3 +37,4 @@ for (let i = 0; i < line.length; i++){
   }
   return `The line is currently: ${temp}`;
 }
+
