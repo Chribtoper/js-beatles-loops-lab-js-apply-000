@@ -1,4 +1,5 @@
 var katzDeli = [];
+let newLine = [];
 
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name);
