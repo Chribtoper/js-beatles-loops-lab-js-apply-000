@@ -37,4 +37,4 @@ for (let i = 0; i < line.length; i++){
   }
   return `The line is currently: ${temp}`;
 }
-
+// use .join 
